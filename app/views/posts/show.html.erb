@@ -7,7 +7,7 @@
 
 <p>
   <strong>Img:</strong>
-  <%= @post.img %>
+  <%= image_tag @post.image_url, width: "200" %>
 </p>
 
 <%= link_to 'Edit', edit_post_path(@post) %> |
