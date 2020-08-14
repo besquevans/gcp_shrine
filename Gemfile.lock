@@ -205,6 +205,9 @@ GEM
     shrine (3.2.2)
       content_disposition (~> 1.0)
       down (~> 5.1)
+    shrine-google_cloud_storage (3.0.1)
+      google-cloud-storage (~> 1.6)
+      shrine (~> 3.0)
     signet (0.14.0)
       addressable (~> 2.3)
       faraday (>= 0.17.3, < 2.0)
@@ -266,6 +269,7 @@ DEPENDENCIES
   sass-rails (>= 6)
   selenium-webdriver
   shrine (~> 3.2, >= 3.2.2)
+  shrine-google_cloud_storage (~> 3.0, >= 3.0.1)
   spring
   spring-watcher-listen (~> 2.0.0)
   sqlite3 (~> 1.4)
