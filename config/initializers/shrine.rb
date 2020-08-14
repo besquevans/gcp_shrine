@@ -13,8 +13,8 @@ end
 # ENV['GOOGLE_CLOUD_KEYFILE']="config/keys/gcp.json"
 
   Shrine.storages = {
-    cache: Shrine::Storage::GoogleCloudStorage.new(bucket: "cache"),
-    store: Shrine::Storage::GoogleCloudStorage.new(bucket: "store"),
+    cache: Shrine::Storage::GoogleCloudStorage.new(bucket: "ig_demo_storage_0814"),
+    store: Shrine::Storage::GoogleCloudStorage.new(bucket: "ig_demo_storage_0814"),
   }
 # else
   # Shrine.storages = {
