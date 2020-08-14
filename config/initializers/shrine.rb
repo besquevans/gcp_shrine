@@ -10,11 +10,11 @@ Google::Cloud::Storage.configure do |config|
   config.credentials = "config/keys/gcp.json"
 end
 
-ENV['GOOGLE_CLOUD_KEYFILE']="config/keys/gcp.json"
+# ENV['GOOGLE_CLOUD_KEYFILE']="config/keys/gcp.json"
 
   Shrine.storages = {
     cache: Shrine::Storage::GoogleCloudStorage.new(bucket: "cache"),
-    store: Shrine::Storage::GoogleCloudStorage.new(buct: "store"),
+    store: Shrine::Storage::GoogleCloudStorage.new(bucket: "store"),
   }
 # else
   # Shrine.storages = {
